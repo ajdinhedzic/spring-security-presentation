@@ -1,4 +1,4 @@
-package com.cijug.controller;
+package controller;
 
 import org.junit.Test;
 import org.springframework.test.context.web.WebAppConfiguration;
@@ -11,14 +11,14 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 
 @WebAppConfiguration
-public class WelcomeControllerTest {
+public class AdminControllerTest {
 
     @Test
-    public void welcomeReturnsIndexPage() throws Exception {
-        MockMvc mockMvc = MockMvcBuilders.standaloneSetup(new WelcomeController()).build();
-        mockMvc.perform(get("/welcome"))
+    public void adminReturnsOK() throws Exception {
+        MockMvc mockMvc = MockMvcBuilders.standaloneSetup(new AdminController()).build();
+        mockMvc.perform(get("/admin"))
                 .andExpect(status().isOk())
-                .andExpect(view().name("index"))
+                .andExpect(view().name("dashboard"))
                 .andExpect(model().attributeExists("message"));
     }
 }

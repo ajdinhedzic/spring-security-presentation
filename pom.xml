@@ -4,16 +4,6 @@
 
     <groupId>com.hedzic</groupId>
     <artifactId>spring-security-cijug</artifactId>
-    <packaging>war</packaging>
-    <version>1.0-SNAPSHOT</version>
-
-    <name>spring-security-cijug Maven Webapp</name>
-    <url>http://maven.apache.org</url>
-
-    <properties>
-        <spring.version>4.2.1.RELEASE</spring.version>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -41,6 +31,25 @@
             <version>3.0.1</version>
         </dependency>
 
+
+        <!--Spring Security -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>4.0.2.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>4.0.2.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-taglibs</artifactId>
+            <version>4.0.2.RELEASE</version>
+        </dependency>
+
+
         <!--Test-->
         <dependency>
             <groupId>junit</groupId>
@@ -55,6 +64,16 @@
         </dependency>
 
     </dependencies>
+    <packaging>war</packaging>
+
+    <version>1.0-SNAPSHOT</version>
+    <name>spring-security-cijug Maven Webapp</name>
+
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <spring.version>4.2.1.RELEASE</spring.version>
+    </properties>
 
     <build>
         <finalName>spring-security-cijug</finalName>
