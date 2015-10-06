@@ -3,7 +3,7 @@
 <!DOCTYPE>
 <html lang="en">
 <head>
-<title>Welcome!</title>
+    <title>Admin Dashboard</title>
 </head>
 <body>
     <h2><c:out value="${message}"/></h2>
