@@ -1,4 +1,4 @@
-package controller;
+package com.cijug.controller;
 
 import org.junit.Test;
 import org.springframework.test.context.web.WebAppConfiguration;
